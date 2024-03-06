@@ -12,7 +12,7 @@ def caesar(data, key, mode):
     new_data = ''
     for c in data:
         index = alphabet.find(c)
-        print(f"index = {index}")
+        # print(f"index = {index}")
         if index == -1:
             new_data += c
         else:
@@ -24,7 +24,7 @@ def caesar(data, key, mode):
 
 # Tests
 key = 5
-original = input()
+original = input("Digite o texto a ser cifrado: ")
 print('  Original:', original)
 ciphered = caesar(original, key, MODE_ENCRYPT)
 print('Encriptada:', ciphered)
